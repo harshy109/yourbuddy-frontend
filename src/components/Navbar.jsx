@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import profileImg from './../assets/profile-image.avif'
 
+
 const Navbar = () => {
   return (
     <nav className="bg-white shadow-orange-100 px-6 py-3 flex items-center justify-between">
@@ -14,7 +15,7 @@ const Navbar = () => {
         {/* Login / Signup Button */}
         <Link
           to="/login"
-          className="bg-blue-500 text-white px-4 py-1.5 rounded-full font-medium hover:bg-red-600 transition "
+          className="bg-blue-500 text-white px-4 py-1.5 rounded-full font-medium hover:bg-blue-100 hover:text-blue-950 hover:border-2  transition "
         >
           Login / Sign Up
         </Link>
