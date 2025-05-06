@@ -1,0 +1,59 @@
+{
+  "navbar": {
+    "login": "Login / Sign Up",
+    "title": "YourBuddy"
+  },
+  "hero": {
+    "title": "Welcome to YourBuddy",
+    "subtitle": "A friend who listens to you, always.",
+    "guest": "Continue as Guest",
+    "login": "Login"
+  },
+  "features": {
+    "title": "What YourBuddy Offers",
+    "moodTracking": {
+      "title": "Mood Tracking",
+      "desc": "Understand your emotional patterns."
+    },
+    "anonymousChat": {
+      "title": "Anonymous Chat",
+      "desc": "Talk freely without judgment."
+    },
+    "selfCareTips": {
+      "title": "Self-Care Tips",
+      "desc": "Personalized mental wellness advice."
+    },
+    "guidedJournaling": {
+      "title": "Guided Journaling",
+      "desc": "Daily writing prompts for clarity."
+    },
+    "meditation": {
+      "title": "Meditation",
+      "desc": "Guided sessions to relax your mind."
+    }
+  },
+  "highlight": {
+    "title": "Chat Anonymously",
+    "desc": "Sometimes all we need is someone to listen. YourBuddy allows you to express yourself freely, without revealing your identity.",
+    "cta": "Try Anonymous Chat"
+  },
+  "chat": {
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "botGreeting": "I'm here for you! 😊 How are you feeling today?",
+    "moodResponse": "You're feeling {{mood}}! Let's make today great! 😊"
+  },
+  "moods": {
+    "happy": "😊 Happy",
+    "sad": "😢 Sad",
+    "angry": "😡 Angry",
+    "anxious": "😨 Anxious",
+    "tired": "😴 Tired"
+  },
+  "footer": {
+    "copyright": "© 2025 YourBuddy. All rights reserved.",
+    "about": "About",
+    "contact": "Contact",
+    "privacy": "Privacy"
+  }
+}

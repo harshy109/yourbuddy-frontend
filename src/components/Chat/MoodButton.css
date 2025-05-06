@@ -1,0 +1,55 @@
+/* Custom styles for ChatPage */
+.mood-buttons-container {
+    position: relative;
+    margin-bottom: 10px;
+    z-index: 10;
+  }
+  
+  .main-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 0 20px 20px;
+  }
+  
+  .result {
+    margin-bottom: 90px;
+    padding-bottom: 30px;
+  }
+  
+  /* Ensure main container has enough space for all elements */
+  .main-container {
+    margin-bottom: 160px; /* Increased to accommodate mood buttons */
+  }
+  
+  /* Add some breathing room between messages */
+  .result-data, .result-title {
+    margin-bottom: 15px;
+  }
+  
+  /* Style for message bubbles */
+  .result-data p {
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    padding: 12px 15px;
+  }
+  
+  .result-title p {
+    background-color: #e0eaff;
+    border-radius: 15px;
+    padding: 12px 15px;
+  }
+  
+  /* Improve mobile responsiveness */
+  @media (max-width: 768px) {
+    .mood-buttons-container {
+      padding: 5px;
+    }
+    
+    .mood-buttons-container button {
+      width: 35px;
+      height: 35px;
+      margin: 0 5px;
+    }
+  }
