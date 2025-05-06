@@ -1,220 +1,40 @@
-/* background: linear-gradient(to bottom, #b5c4e9, rgb(228, 174, 174)
-    ); */
-    .main{
-        flex: 1; /*used to set flex-grow: 1; flex-shrink:1; flex-basis:0; */
-        min-height: 100vh;
-        position: relative;
-        background: linear-gradient(to bottom, #d1d8ebc3, #e4c2c2c0
-        );
-        
-    }
-    .main .nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: large;
-        padding: 20px;
-        color: #505050;
-        /* background: linear-gradient(to right, #b5c4e9, rgb(228, 174, 174)
-        ); */
-    }
-    .nav p{
-        font-size: larger;
-        padding: 10px;
-    }
-    .main .nav img{
-        width: 50px;
-        border-radius: 50%;
-    }
-    
-    .main-container{
-        max-width: 900px;
-        margin: auto;
-    
-        height: calc(100vh - 180px);
-        overflow-y: auto;
-        margin-bottom: 100px; 
-    }
-    .main-container::-webkit-scrollbar{
-        display: none;
-    }
-    .main .greet{
-        margin: 50px 0px;
-        font-size: 56px;
-        font-weight: 500;
-        color: #a4a4a4;
-        padding: 20px;
-    }
-    .main .greet span{
-        background: -webkit-linear-gradient(50deg, #ca85f8, #fc5711);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    .main .cards{
-        display: grid;
-        grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
-        gap: 15px;
-        padding: 20px;
-    }
-    .main .card{
-        height: 200px;
-        padding: 15px;
-        background-color: #f4f6f7;
-        border-radius: 10px;
-        position: relative;
-        cursor: pointer;
-    }
-    .main .card img{
-        position: absolute;
-        width: 35px;
-        padding: 10px;
-        border-radius: 20px;
-        background-color: white;
-        bottom: 10px;
-        right: 10px;
-    }
-    .main .card p{
-        color: #585858;
-        font-size: 17px;
-        font-weight: 300;
-    }
-    .main .card:hover{
-        background-color: #e2eef7c3;
-    }
-    .main-bottom{
-        display: flex;
-        flex-direction: column;
-        z-index: 1000;
-        justify-self: anchor-center;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        max-width: 900px;
-        padding: 0px 20px;
-        margin: auto;
-        background:none
-    }
-    .search-box{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
-        padding: 10px 20px;
-        background-color: #f0f4f9;
-        border-radius: 10px;  
-    }
-    .search-box img{
-        width: 25px;
-        cursor: pointer;
-    }
-    .search-box input{
-        flex: 1;
-        border-radius: 8px;
-        border: none;
-        outline: none;
-        padding: 8px;
-        font-size: 18px;
-        font-weight: 300;
-        background: transparent;
-    }
-    .search-box div{
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-    .main .bottom-info{
-        font-size: 14px;
-        margin: 15px auto;
-        font-weight: 300;
-        /* color: #505050; */
-        text-align: center;
-    }
-    .result{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        overflow-y: scroll;
-        padding: 0px 5%;
-    }
-    .result::-webkit-scrollbar{
-        display: none;
-    }
-    .result img{
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-    }
-    .result-title, .result-data{
-        display: flex;
-        gap:10px;
-        align-items: center;
-    }
-    .result-title{
-        justify-content: end;
-        flex-direction: row-reverse;
-    }
-    .result-data{
-        justify-content: start;
-        align-items: flex-start;
-        position: relative;
-    }
-    .result-title p,.result-data p{
-        border-radius: 15px;
-        padding: 10px 15px;
-        text-align: justify;
-        font-weight: 300;
-        font-size: 17px;
-    }
-    .result-title p{
-        background-color: #f0f4f9;
-        margin-left: 50px;
-    }
-    .result-data p{
-        /* background-color: #f9ebe1; */
-        margin-right: 50px;
-        line-height: 1.7;
-        /* overflow-y: scroll; */
-        -ms-overflow-style: none;
-    }
-    .result-data p::-webkit-scrollbar{
-        display: none;
-    }
-    .main .loader{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    .loader hr{
-        border-radius: 4px ;
-        border: none;
-        background-color: #f6f7f8;
-        background: linear-gradient(to right, #cfd7e9, white, #cfd7e9);
-        background-size: 600px 50px;
-        height: 20px;
-        animation: loader 3s infinite linear;
-    }
-    @keyframes loader{
-        0%{
-            background-position: -800px 0px;
-        }
-        100%{
-            background-position: 800px 0px;
-        }
-    }
-    @media (max-width: 600px) {
-        .main-bottom input{
-            flex:none;
-            width: 150px;
-            
-        }
-        .main-bottom img{
-            width: 20px;
-        }
-        .search-box{
-            padding: 5px 10px;
-            gap: 5px;
-            background-color: #ca85f8;
-        }
-    }
-    
+/* Avatar styling for chat messages */
+.message-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-avatar {
+  background-color: #3b82f6; /* blue-500 */
+  color: white;
+}
+
+.bot-avatar {
+  background-color: #d1d5db; /* gray-300 */
+  color: #374151; /* gray-700 */
+}
+
+/* Support for wider messages */
+@media (min-width: 768px) {
+  .max-w-lg {
+    max-width: 32rem; /* 512px */
+  }
+}
+
+/* For screens smaller than 640px, make the chat container wider */
+@media (max-width: 640px) {
+  .max-w-\[80\%\] {
+    max-width: 95% !important;
+  }
+}
+
+/* For larger screens, ensure we respect the 80% limit */
+@media (min-width: 1280px) {
+  .max-w-\[80\%\] {
+    max-width: 1024px !important;
+  }
+}
