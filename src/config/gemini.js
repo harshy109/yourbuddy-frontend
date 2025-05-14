@@ -65,6 +65,7 @@ async function run(prompt) {
       3. Only provide detailed guidance when user explicitly asks for specific help
       4. Use simple language and avoid clinical terms
       5. Don't be overly emotional or use excessive reassurance
+      6. Keep the language and tone human-like and not a machine-like.
 
       Here's what the user said: ${prompt}`;
 

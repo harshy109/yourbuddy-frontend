@@ -18,14 +18,14 @@ const features = [
     icon: "🧘",
   },
   {
-    title: "Guided Journaling",
-    desc: "Daily writing prompts for clarity.",
-    icon: "📓",
+    title: "Multi-lingual Support",
+    desc: "Chat in your preferred language - English or Hindi.",
+    icon: "🗣️",
   },
   {
-    title: "Meditation",
-    desc: "Guided sessions to relax your mind.",
-    icon: "🧘‍♂️",
+    title: "Login Mode",
+    desc: "Save your chats to better understanding by YourBuddy.",
+    icon: "📝",
   },
 ];
 
