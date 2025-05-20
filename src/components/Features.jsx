@@ -8,9 +8,9 @@ const features = [
     icon: "💖",
   },
   {
-    title: "Anonymous Chat",
-    desc: "Talk freely without judgment.",
-    icon: "🕵️",
+    title: "Multi-lingual Support",
+    desc: "Chat in your preferred language - English or Hindi.",
+    icon: "🗣️",
   },
   {
     title: "Self-Care Tips",
@@ -18,9 +18,9 @@ const features = [
     icon: "🧘",
   },
   {
-    title: "Multi-lingual Support",
-    desc: "Chat in your preferred language - English or Hindi.",
-    icon: "🗣️",
+    title: "Anonymous Chat",
+    desc: "Talk freely without judgment.",
+    icon: "🕵️",
   },
   {
     title: "Login Mode",

@@ -16,6 +16,7 @@ import send_icon from './send_icon.png'
 
 import app_icon from './gen-AI_1.png'
 import user_icon from './user_icon.png'
+import hero_bg from './hero_bg.png'
 
 //exporting as NAMED EXPORT
 export const assets = {
@@ -34,5 +35,6 @@ export const assets = {
     // code_icon,
     user_icon,
     send_icon,
-    app_icon
+    app_icon,
+    hero_bg
 }
