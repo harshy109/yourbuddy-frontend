@@ -29,7 +29,6 @@ const Login = () => {
     try {
       setLoading(true);
       
-      // Make sure you're using HTTP not HTTPS for local development
       const response = await fetch('http://localhost:5000/api/auth/login', {
         method: 'POST',
         headers: {
@@ -41,12 +40,11 @@ const Login = () => {
         }),
       });
 
-      // Check if server is reachable first
       if (!response) {
         throw new Error("Connection failed. Make sure the server is running.");
       }
 
-      // Handle non-JSON responses
+      // Handling non-JSON responses
       const contentType = response.headers.get("content-type");
       if (!contentType || !contentType.includes("application/json")) {
         throw new Error("Server returned an invalid response format.");
@@ -58,7 +56,7 @@ const Login = () => {
         throw new Error(data.message || 'Login failed');
       }
       
-      // Login successful, store the token
+      // Login successful
       localStorage.setItem('token', data.token);
       localStorage.setItem('user', JSON.stringify(data.user));
       

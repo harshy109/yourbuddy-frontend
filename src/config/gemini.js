@@ -1,8 +1,12 @@
 import {
   GoogleGenerativeAI
 } from "@google/generative-ai";
+import dotenv from 'dotenv';
 
-const apiKey = "AIzaSyC4EK7UKtay3TGlgAoFmsM_aM1kSom7pD4";
+const apiKey = process.env.VITE_API_KEY;
+if (!apiKey) {
+  throw new Error("Missing VITE_GOOGLE_API_KEY environment variable");
+}
 const genAI = new GoogleGenerativeAI(apiKey);
 
 const model = genAI.getGenerativeModel({
@@ -22,7 +26,7 @@ async function run(prompt) {
   // Check if the prompt contains a language preference
   const isHindi = prompt.includes('Please respond in Hindi');
   
-  // Adjust the chat history based on language
+  // Adjusting the chat history based on language
   const initialHistory = isHindi ? [
     {
       role: "user",
@@ -60,7 +64,7 @@ async function run(prompt) {
 
       उपयोगकर्ता ने यह कहा: ${prompt}`
     : `As YourBuddy, a mental health support chatbot:
-      1. Keep responses brief and conversational (2-3 short sentences)
+      1. Keep responses brief and conversational (1-3 short sentences)
       2. Be empathetic but direct
       3. Only provide detailed guidance when user explicitly asks for specific help
       4. Use simple language and avoid clinical terms
